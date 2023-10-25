@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahad - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Mahad's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <div>Hi! My name is </div><span class="name">Muhammad Mahad</span>
+                <div> and I'm a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <form>
+                        <button class="btn" type="submit" onclick="window.open('Resume-LinkedIn.pdf')">Download
+                            Resume</button>
+                    </form>
+                    <form action="https://github.com/m-m4h4d" method="get" target="_blank">
+                        <button class="btn">Visit GitHub</button>
+                    </form>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="b.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text">What I'm capable of</span>
+            <h1>Skillset</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="1.png" alt="">
+                    <div class="vertical-title">
+                        Automation Engineer
+                    </div>
+                    <div class="vertical-description">
+                        Entry-level Automation Engineer. Skilled in automating a wide variety of tasks ranging from
+                        simple
+                        to complex using Python and Bash.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="2.png" alt="">
+                    <div class="vertical-title">
+                        Software Developer
+                    </div>
+                    <div class="vertical-description">
+                        Self-employed Software Developer. Proficient in OOP, Python, Java, C, C++, Verilog, Bash, code
+                        optimization, debugging, troubleshooting, Git, and GitHub.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="3.png" alt="">
+                    <div class="vertical-title">
+                        IT Support Specialist
+                    </div>
+                    <div class="vertical-description">
+                        IT Support Specialist II. Skilled in collaborating with technical teams to
+                        identify and implement solutions for technical issues.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="4.png" alt="">
+                    <div class="vertical-title">
+                        Web Designer
+                    </div>
+                    <div class="vertical-description">
+                        Passionate Web Designer. Skilled in website building using HTML, CSS, JavaScript, and React.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="5.png" alt="">
+                    <div class="vertical-title">
+                        Cloud Engineer
+                    </div>
+                    <div class="vertical-description">
+                        Proficient in Cloud Computing. Skilled in working with vitual machines (VMs) and Google Cloud
+                        Platform (GCP).
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Mahad's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>LinkedIn</li>
+                    <li>GitHub</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; mahadsdevportfolio.com | All rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Automation Engineer', 'Computer Scientist', 'IT Support Specialist', 'Web Designer', 'Cloud Engineer', 'Software Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyBPg28LI6xHO1GyO6-gBl3ULgDvWUBWjMw",
+          authDomain: "mahadsdevportfolio.firebaseapp.com",
+          projectId: "mahadsdevportfolio",
+          storageBucket: "mahadsdevportfolio.appspot.com",
+          messagingSenderId: "322143312536",
+          appId: "1:322143312536:web:c515c87fff64a2d5478eed",
+          measurementId: "G-WLGB5KH5GC"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+
+</html>
